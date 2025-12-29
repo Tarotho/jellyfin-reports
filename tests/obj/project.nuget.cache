@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "n2dLO/42oSA=",
+  "success": true,
+  "projectFilePath": "/home/tarotho/workspace/jellyfin/jellyfin-reports/tests/GridTest.csproj",
+  "expectedPackageFiles": [
+    "/home/tarotho/.nuget/packages/questpdf/2024.12.3/questpdf.2024.12.3.nupkg.sha512",
+    "/home/tarotho/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/tarotho/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.11/microsoft.netcore.app.host.linux-x64.9.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

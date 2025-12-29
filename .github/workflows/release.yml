@@ -1,0 +1,49 @@
+name: Build and Release Plugin
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore Jellyfin.Plugin.Reports/Jellyfin.Plugin.Reports.csproj
+
+    - name: Build
+      run: dotnet build Jellyfin.Plugin.Reports/Jellyfin.Plugin.Reports.csproj -c Release --no-restore
+
+    - name: Publish
+      run: dotnet publish Jellyfin.Plugin.Reports/Jellyfin.Plugin.Reports.csproj -c Release --no-build -o ./publish
+
+    - name: Create Plugin ZIP
+      run: |
+        cd publish
+        zip -r ../jellyfin-reports.zip .
+        cd ..
+
+    - name: Create Release
+      id: create_release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: jellyfin-reports.zip
+        body: |
+          ### jellyfin-reports Release ${{ github.ref_name }}
+          
+          Instrucciones:
+          1. Descarga el archivo `jellyfin-reports.zip`.
+          2. Descomprímelo en la carpeta de plugins de tu servidor Jellyfin.
+          3. Reinicia Jellyfin.
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

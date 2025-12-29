@@ -1,8 +1,8 @@
-# 🎬 JellyfinReport - Jellyfin Annual Insights
+# 🎬 jellyfin-reports - Jellyfin Annual Insights
 
-![Jellyfin Report Header](https://raw.githubusercontent.com/tu-usuario/JellyfinReport/main/assets/header.png)
+![jellyfin-reports Header](https://raw.githubusercontent.com/Tarotho/jellyfin-reports/main/assets/header.png)
 
-**JellyfinReport** es un plugin para Jellyfin diseñado para generar hermosos reportes anuales en formato PDF (A4). Basado en un sistema de cuadrícula flexible, permite visualizar tus estadísticas de visualización, tendencias mensuales y hitos cinematográficos de una manera elegante y profesional.
+**jellyfin-reports** es un plugin para Jellyfin diseñado para generar hermosos reportes anuales en formato PDF (A4). Basado en un sistema de cuadrícula flexible, permite visualizar tus estadísticas de visualización, tendencias mensuales y hitos cinematográficos de una manera elegante y profesional.
 
 ---
 
@@ -19,22 +19,30 @@
 
 ## 🚀 Instalación
 
-### Desde Binarios (Próximamente)
-1. Descarga el archivo `JellyfinReport.dll` desde la sección de [Releases](https://github.com/tu-usuario/JellyfinReport/releases).
-2. Colócalo en la carpeta `plugins/JellyfinReport` de tu servidor Jellyfin.
+### Opción A: Añadir Repositorio (Recomendado)
+Puedes añadir este repositorio directamente a tu servidor Jellyfin para recibir actualizaciones automáticas:
+1. Ve a **Dashboard** -> **Plugins** -> **Repositorios**.
+2. Haz clic en el botón `+`.
+3. Nombre del Repositorio: `jellyfin-reports`
+4. URL del Repositorio: `https://raw.githubusercontent.com/Tarotho/jellyfin-reports/main/manifest.json`
+5. Ve a la pestaña **Catálogo** e instala **jellyfin-reports**.
+
+### Opción B: Instalación Manual
+1. Descarga el archivo `jellyfin-reports.zip` desde la sección de [Releases](https://github.com/Tarotho/jellyfin-reports/releases).
+2. Descomprímelo en la carpeta `plugins/jellyfin-reports` de tu servidor Jellyfin.
 3. Reinicia Jellyfin.
 
-### Desde el Código Fuente
+### Opción C: Desde el Código Fuente
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/JellyfinReport.git
+   git clone https://github.com/Tarotho/jellyfin-reports.git
    ```
-2. Asegúrate de tener instalado el SDK de .NET 10.0.
+2. Asegúrate de tener instalado el SDK de .NET 9.0.
 3. Compila el proyecto:
    ```bash
    dotnet build -c Release
    ```
-4. Copia el archivo generado en `bin/Release/net10.0/JellyfinReport.dll` a tu carpeta de plugins de Jellyfin.
+4. Copia el archivo generado en `bin/Release/net10.0/jellyfin-reports.dll` a tu carpeta de plugins de Jellyfin.
 
 ---
 
@@ -52,7 +60,7 @@ El reporte utiliza una cuadrícula de **2 columnas (X: 0-1)** y **10 filas (Y: 0
 | (0,9) | (1,9) |
 
 ### Ejemplo de Configuración JSON
-Puedes editar esto desde el Dashboard de Jellyfin -> Plugins -> **JellyfinReport**.
+Puedes editar esto desde el Dashboard de Jellyfin -> Plugins -> **jellyfin-reports**.
 
 ```json
 {
@@ -107,7 +115,7 @@ curl -X GET "http://tu-servidor:8096/AnnualReport/TU_USER_ID" \
 
 ## 🛠️ Desarrollo Tecnológico
 
-- **Core**: .NET 10.0
+- **Core**: .NET 9.0
 - **PDF Engine**: [QuestPDF](https://www.questpdf.com/)
 - **UI**: HTML/Javascript (integrado en Jellyfin Dashboard)
 - **API**: ASP.NET Core (Jellyfin API Controllers)

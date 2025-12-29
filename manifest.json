@@ -1,0 +1,20 @@
+[
+    {
+        "guid": "ddc20e3f-c504-4986-b4df-569ff2ceb903",
+        "name": "jellyfin-reports",
+        "description": "Generador de reportes anuales premium en formato PDF (A4) para usuarios de Jellyfin.",
+        "overview": "Visualiza tus estadísticas anuales de visualización, tiempo total y hitos en un elegante documento PDF.",
+        "owner": "Tarotho",
+        "category": "Reporting",
+        "versions": [
+            {
+                "version": "1.0.0.0",
+                "changelog": "Versión inicial: Integración con Jellyfin, estadísticas reales y exportación PDF.",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/Tarotho/jellyfin-reports/releases/download/v1.0.0.0/jellyfin-reports.zip",
+                "checksum": "",
+                "timestamp": "2025-12-29T12:00:00Z"
+            }
+        ]
+    }
+]

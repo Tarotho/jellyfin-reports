@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QuestPDF" Version="2024.12.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="../Jellyfin.Plugin.Reports/Configuration/ModuleDefinition.cs" Link="Configuration/ModuleDefinition.cs" />
+    <Compile Include="../Jellyfin.Plugin.Reports/Grid/GridConstants.cs" Link="Grid/GridConstants.cs" />
+    <Compile Include="../Jellyfin.Plugin.Reports/Grid/GridValidator.cs" Link="Grid/GridValidator.cs" />
+    <Compile Include="../Jellyfin.Plugin.Reports/Models/UserAnnualStats.cs" Link="Models/UserAnnualStats.cs" />
+    <Compile Include="../Jellyfin.Plugin.Reports/Modules/IReportModule.cs" Link="Modules/IReportModule.cs" />
+    <Compile Include="../Jellyfin.Plugin.Reports/Modules/ReportModuleBase.cs" Link="Modules/ReportModuleBase.cs" />
+    <Compile Include="../Jellyfin.Plugin.Reports/Modules/MockModule.cs" Link="Modules/MockModule.cs" />
+  </ItemGroup>
+
+</Project>

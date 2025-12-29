@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/tarotho/workspace/jellyfin/jellyfin-reports/tests/GridTest.csproj": {}
+  },
+  "projects": {
+    "/home/tarotho/workspace/jellyfin/jellyfin-reports/tests/GridTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/tarotho/workspace/jellyfin/jellyfin-reports/tests/GridTest.csproj",
+        "projectName": "GridTest",
+        "projectPath": "/home/tarotho/workspace/jellyfin/jellyfin-reports/tests/GridTest.csproj",
+        "packagesPath": "/home/tarotho/.nuget/packages/",
+        "outputPath": "/home/tarotho/workspace/jellyfin/jellyfin-reports/tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/tarotho/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2024.12.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.11, 9.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[9.0.11, 9.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
