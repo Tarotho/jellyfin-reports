@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dl8lsfufe4c=",
+  "success": true,
+  "projectFilePath": "/home/tarotho/workspace/jellyfin/jellyfin-reports/GridTest/GridTest.csproj",
+  "expectedPackageFiles": [
+    "/home/tarotho/.nuget/packages/questpdf/2024.12.3/questpdf.2024.12.3.nupkg.sha512"
+  ],
+  "logs": []
+}
